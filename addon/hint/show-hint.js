@@ -311,7 +311,7 @@
       if (t && t.hintId != null) {widget.changeActive(t.hintId); widget.pick();}
     });
 
-    CodeMirror.on(hints, "click", function(e) {
+    CodeMirror.on(hints, "mouseup", function(e) {
       var t = getHintElement(hints, e.target || e.srcElement);
       if (t && t.hintId != null) {
         widget.changeActive(t.hintId);
